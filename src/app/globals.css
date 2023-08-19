@@ -3,25 +3,170 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --color-w: #ffffff;
+  --sky: #40cfff;
+  --grass: #8bc34a;
+  --color-principal: #994796;
+  --color-destacado-1: #ffc107;
+  --color-sombra: #795548;
+  --font-retro: "Silkscreen";
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--color-w);
+  /* overflow: hidden; */
+  font-family: "Silkscreen", cursive;
+  overflow: hidden;
+}
+
+.interfaze {
+  background-image: url("./assets/q.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* image-rendering: pixelated; */
+  /* Otros estilos que quieras aplicar */
+}
+
+
+.cloud {
+  position: absolute;
+  top: 150px;
+  left: -100px; /* Ajustar la posición inicial */
+  animation: moveCloud 60s linear infinite; /* Duración más larga para un movimiento más suave */
+  height: calc(700px / 1.5);
+    width: calc(700px / 1.5);
+}
+
+.cloud-p {
+  position: absolute;
+  top: 50px;
+  left: -300px; /* Ajustar la posición inicial */
+  height: 300px;
+  width: 300px;
+  animation: moveCloud 45s linear infinite; /* Duración más larga para un movimiento más suave */
+}
+
+.cloud-p2 {
+  position: absolute;
+  top: 450px;
+  left: -300px; /* Ajustar la posición inicial */
+  height: 250px;
+  width: 250px;
+  animation: moveCloud 30s linear infinite; /* Duración más larga para un movimiento más suave */
+}
+
+@keyframes moveCloud {
+  0% {
+    left: -300px; /* Ajustar la posición inicial */
+  }
+  100% {
+    left: calc(100vw + 100px); /* Ajustar la posición final */
+  }
+}
+
+/* @media (max-width: 1440px) {
+  .cloud {
+    height: calc(700px / 1.5);
+    width: calc(700px / 1.5);
+  }
+} */
+
+.pixel2:active {
+  top: 6px;
+}
+
+.pixel2 {
+  position: relative;
+  display: block;
+  margin: 20px;
+  font-family: "Silkscreen";
+  text-transform: uppercase;
+
+  font-size: 25px;
+  color: var(--color-w);
+}
+
+.pixel2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: -10px;
+  right: -10px;
+  background: var(--color-w);
+  z-index: -1;
+}
+
+.pixel2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: -6px;
+  right: -6px;
+  background: var(--color-w);
+  z-index: -1;
+}
+
+.pixel2 {
+  padding: 10px 10px;
+  position: relative;
+  background: var(--color-w);
+  width: auto;
+  z-index: 2;
+}
+
+.pixel2:hover,
+.pixel2:hover::before,
+.pixel2:hover::after {
+  background: #572956;
+}
+
+/*  historieta */
+.story-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.image-story img {
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+.buttons-story {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.buttons-story button {
+  background-color: #000;
+  color: var(--color-w);
+  border: 1px solid var(--color-w);
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.prev-button,
+.next-button {
+  opacity: 0.7;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  opacity: 1;
 }
