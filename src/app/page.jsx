@@ -1,6 +1,6 @@
 "use client"
 // import Bush from "@/visuals/Bush";
-import Cloud from "@/components/Cloud";
+import Cloud from "@/components/home/Cloud";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
@@ -13,13 +13,14 @@ export default function Home() {
         <button
           className="pixel2 "
           onClick={() => {
-            route.push(`Game/`);
+            // mandar a la ruta de juego
+            route.push(`/intro/introduction`);
           }}
         >
           Start
         </button>
         <button className="pixel2" onClick={() => {
-          route.push(`About/`);
+          route.push(`/about`);
         }}  >About</button>
       </div>
     </div>

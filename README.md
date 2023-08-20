@@ -18,17 +18,78 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Proyect Structure
 
-To learn more about Next.js, take a look at the following resources:
+Estructura parcial del proyecto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+pat-game
+│
+├── public
+│
+└── src
+    │
+    ├── app
+    │   ├── globals.css
+    │   ├── layout.js
+    │   └── page.jsx
+    │
+    ├── components
+    │   ├── about
+    │   ├── game
+    │   └── intro
+    │
+    └── pages
+        ├── about
+        ├── controls
+        ├── game
+        └── intro
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
 
-## Deploy on Vercel
+# Contributing Guidelines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Thank you for considering contributing to the project! Please follow these guidelines for submitting commits.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Commit Message Format
+
+Each commit message should have a concise yet descriptive title, followed by an optional detailed description. The title and description should be separated by a blank line.
+
+### Commit Types
+
+1. **feat**: A new feature or enhancement to existing functionality.
+
+
+2. **fix**: A bug fix.
+
+
+3. **docs**: Documentation updates, such as comments, README, or inline docs.
+
+
+4. **style**: Code style changes, such as formatting, indentation, etc.
+
+
+5. **refactor**: Code changes that don't add features or fix bugs, like code restructuring.
+
+
+6. **test**: Adding or improving tests.
+
+
+7. **chore**: Routine tasks, maintenance, or tooling changes.
+
+
+## Example commit
+
+
+## Pull Requests
+
+Please submit a pull request with your commits. Make sure your branch is up-to-date with the main branch before submitting the pull request.
+
+## Code Review
+
+All pull requests will be reviewed. Please respond to any feedback or comments and make the necessary changes before the pull request can be merged.
+
+Thank you for your contribution!
+
+
+
