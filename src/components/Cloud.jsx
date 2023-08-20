@@ -1,5 +1,5 @@
 import React from "react";
-import Clouds from "../app/assets/Cloud.png";
+import clouds from "../app/assets/Cloud.png";
 import Image from "next/image";
 
 const Cloud = () => {
@@ -10,9 +10,9 @@ const Cloud = () => {
       {cloudClasses.map((suffix, index) => (
         <Image
           key={index}
-          src={Clouds}
+          src={clouds}
           alt="Nube"
-          className={`cloud${suffix} -z-10`} // Agrega el sufijo a la clase
+          className={`cloud${suffix}`} // Agrega el sufijo a la clase
           priority={true}
         />
       ))}

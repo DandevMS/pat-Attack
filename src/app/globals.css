@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --color-w: #ffffff;
+  --color-fondo: #ffffff;
   --sky: #40cfff;
   --grass: #8bc34a;
   --color-principal: #994796;
@@ -13,14 +13,14 @@
 }
 
 body {
-  background-color: var(--color-w);
+  background-color: var(--color-fondo);
   /* overflow: hidden; */
   font-family: "Silkscreen", cursive;
   overflow: hidden;
 }
 
 .interfaze {
-  background-image: url("./assets/q.png");
+  background-image: url("https://fondosmil.com/fondo/107701.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   /* image-rendering: pixelated; */
@@ -64,13 +64,6 @@ body {
   }
 }
 
-/* @media (max-width: 1440px) {
-  .cloud {
-    height: calc(700px / 1.5);
-    width: calc(700px / 1.5);
-  }
-} */
-
 .pixel2:active {
   top: 6px;
 }
@@ -83,7 +76,7 @@ body {
   text-transform: uppercase;
 
   font-size: 25px;
-  color: var(--color-w);
+  color: white;
 }
 
 .pixel2::before {
@@ -94,7 +87,7 @@ body {
   bottom: 10px;
   left: -10px;
   right: -10px;
-  background: var(--color-w);
+  background: var(--color-principal);
   z-index: -1;
 }
 
@@ -106,14 +99,14 @@ body {
   bottom: 4px;
   left: -6px;
   right: -6px;
-  background: var(--color-w);
+  background: var(--color-principal);
   z-index: -1;
 }
 
 .pixel2 {
   padding: 10px 10px;
   position: relative;
-  background: var(--color-w);
+  background: var(--color-principal);
   width: auto;
   z-index: 2;
 }
@@ -155,8 +148,8 @@ body {
 
 .buttons-story button {
   background-color: #000;
-  color: var(--color-w);
-  border: 1px solid var(--color-w);
+  color: #fff;
+  border: 1px solid #ffffff;
   padding: 8px 16px;
   cursor: pointer;
 }
@@ -170,3 +163,5 @@ body {
 .next-button:hover {
   opacity: 1;
 }
+
+/*   */

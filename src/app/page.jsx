@@ -7,7 +7,7 @@ export default function Home() {
   const route = useRouter();
 
   return (
-    <div className="interfaze flex items-center justify-center h-screen w-screen bg-[#030c29] overflow-hidden ">
+    <div className="interfaze flex items-center justify-center h-screen w-screen bg-[#030c29] ">
       <Cloud />
       <div className=" btn flex flex-col">
         <button
@@ -22,7 +22,6 @@ export default function Home() {
           route.push(`About/`);
         }}  >About</button>
       </div>
-      {/* <Bush /> */}
     </div>
   );
 }
