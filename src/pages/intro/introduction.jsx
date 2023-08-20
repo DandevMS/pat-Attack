@@ -1,5 +1,5 @@
 "use client"
-import Introduction from "@/components/Introduction";
+import Introduction from "@/components/intro/Introduction";
 import { useState } from "react";
 
 
@@ -16,7 +16,7 @@ const page = () => {
         <Introduction onFinish={handleIntroductionFinish} />
         // <Introduction onFinish={handleIntroductionFinish} />
       ) : (
-        //  seccion del juego en una etiqueta
+        //  seccion del juego, componente game
         <p>Game</p>
       )}
     </div>

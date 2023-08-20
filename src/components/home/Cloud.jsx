@@ -1,5 +1,5 @@
 import React from "react";
-import clouds from "../app/assets/Cloud.png";
+import clouds from "../../../public/Cloud.png";
 import Image from "next/image";
 
 const Cloud = () => {
