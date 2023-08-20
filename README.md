@@ -38,8 +38,6 @@ pat-game
     │   ├── about
     │   ├── game
     │   └── intro
-    │   └── home
-    │   └── controls
     │
     └── pages
         ├── about
