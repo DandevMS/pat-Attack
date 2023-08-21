@@ -20,7 +20,7 @@ export default function Home() {
           Start
         </button>
         <button className="pixel2" onClick={() => {
-          route.push(`/about`);
+          route.push(`/about/about`);
         }}  >About</button>
       </div>
     </div>
