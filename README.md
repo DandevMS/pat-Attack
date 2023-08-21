@@ -37,6 +37,7 @@ pat-game
     ├── components
     │   ├── about
     │   ├── game
+    │   └── home
     │   └── intro
     │
     └── pages
