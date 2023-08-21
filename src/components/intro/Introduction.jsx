@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "../../app/globals.css"
 const slides = [
   {
     image: "https://i.ytimg.com/vi/UHU3pQM6xEM/maxresdefault.jpg",
@@ -85,7 +85,7 @@ const Introduction = ({ onFinish }) => {
           <img
             src={slides[currentIndex].image}
             alt={`Slide ${currentIndex}`}
-            style={{ maxWidth: "100%", height: "auto" }}
+            style={{ Width: "100%", height: "auto" }}
           />
         )}
       </div>
@@ -105,8 +105,8 @@ const Introduction = ({ onFinish }) => {
         )}
       </div>
       <div
-        className="text-2xl break-words"
-        style={{ justifyContent: "left", maxWidth: "80%", margin: "0 auto" }}
+        className="text-2xl break-words mb-6"
+        style={{ justifyContent: "left", maxWidth: "80%", margin: "0 auto", zIndex: "1" }}
       >
         <p>{typedText}</p>
       </div>
