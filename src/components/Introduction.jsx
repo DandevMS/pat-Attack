@@ -72,45 +72,45 @@ const Introduction = ({ onFinish }) => {
 
   return (
     <div
-      className="story-container text-white "
-      style={{
-        fontFamily: "Silkscreen",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
-      <div className="image-story" style={{ marginBottom: "1rem" }}>
-        {slides[currentIndex].image && (
-          <img
-            src={slides[currentIndex].image}
-            alt={`Slide ${currentIndex}`}
-            style={{ maxWidth: "100%", height: "auto" }}
-          />
-        )}
-      </div>
-      <div className="buttons-story">
-        {currentIndex > 0 && (
-          <button className="prev-button" onClick={prevSlide}>
-            Anterior
-          </button>
-        )}
-        <button className="next-button" onClick={nextSlide}>
-          {currentIndex < slides.length - 1 ? "Siguiente" : "Terminar"}
-        </button>
-        {currentIndex !== slides.length - 1 && (
-          <button className="skip-button" onClick={skipIntroduction}>
-            Omitir
-          </button>
-        )}
-      </div>
-      <div
-        className="text-2xl break-words"
-        style={{ justifyContent: "left", maxWidth: "80%", margin: "0 auto" }}
-      >
-        <p>{typedText}</p>
-      </div>
-    </div>
+  className="story-container text-white"
+  style={{
+    fontFamily: "Silkscreen",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+  }}
+>
+  <div className="image-story" style={{ marginBottom: "1rem", maxWidth: "100%" }}>
+    {slides[currentIndex].image && (
+      <img
+        src={slides[currentIndex].image}
+        alt={`Slide ${currentIndex}`}
+        style={{ maxWidth: "100%", height: "auto" }}
+      />
+    )}
+  </div>
+  <div className="buttons-story">
+    {currentIndex > 0 && (
+      <button className="prev-button" onClick={prevSlide}>
+        Anterior
+      </button>
+    )}
+    <button className="next-button" onClick={nextSlide}>
+      {currentIndex < slides.length - 1 ? "Siguiente" : "Terminar"}
+    </button>
+    {currentIndex !== slides.length - 1 && (
+      <button className="skip-button" onClick={skipIntroduction}>
+        Omitir
+      </button>
+    )}
+  </div>
+  <div
+    className="text-2xl break-words"
+    style={{ justifyContent: "left", maxWidth: "80%", margin: "0 auto" }}
+  >
+    <p>{typedText}</p>
+  </div>
+</div>
   );
 };
 export default Introduction;
