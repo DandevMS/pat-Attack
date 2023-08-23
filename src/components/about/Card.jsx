@@ -18,6 +18,7 @@ export const Card = ({ Img, Name, linkD, linkG, linkL }) => {
         className="w-[200px] h-[200px] sm:w-[250px] sm:h-[250px] md:w-[300px] md:h-[300px] lg:w-[325px] lg:h-[325px] xl:w-[350px] xl:h-[350px] mb-4 sm:mb-6 md:mb-7 border-2 border-white"
         style={{ borderRadius: "100%" }}
         alt={Name}
+  
       />
 
       <h3 className="text-xl text-white text-center mb-4"> {Name} </h3>
