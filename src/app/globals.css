@@ -14,7 +14,6 @@
 
 body {
   background-color: var(--color-fondo);
-  /* overflow: hidden; */
   font-family: "Silkscreen", cursive;
 }
 
@@ -40,7 +39,7 @@ body {
   left: -100px; /* Ajustar la posición inicial */
   animation: moveCloud 60s linear infinite; /* Duración más larga para un movimiento más suave */
   height: calc(700px / 1.5);
-    width: calc(700px / 1.5);
+  width: calc(700px / 1.5);
 }
 
 .cloud-p {

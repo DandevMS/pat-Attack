@@ -10,16 +10,13 @@ import React from "react";
 
 export const Card = ({ Img, Name, linkD, linkG, linkL }) => {
   return (
-    <div className="border p-3 flex flex-col items-center max-w-[350px] h-500 max-h-[505px] mx-auto">
-      <div className="flex p-4 ">
+    <div className="border p-3 flex flex-col items-center max-w-[350px] h-500 max-h-[505px] mx-auto ">
       <Image
               src={Img}
-              className="max-w-full max-h-full mb-4 sm:mb-6 md:mb-7 border-2 border-white rounded-[100%] "  
+              className="w-80 h-80  mb-4 sm:mb-6 md:mb-7 border-2 border-white rounded-[100%] "  
               alt={Name}
+              style={{objectFit: 'cover'}}
             />
-      </div>
-      
-
       <h3 className="text-xl text-white text-center mb-4"> {Name} </h3>
 
       <div className="flex space-x-2">

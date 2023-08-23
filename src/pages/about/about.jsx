@@ -24,7 +24,6 @@ const Page = () => {
             Regresar
           </button>
         </div>
-        <div className="w-screen h-screen overflow-scroll ">
 
         <div className="flex flex-col container mx-auto px-4 my-auto justify-center ">
           {/* Título */}
@@ -76,8 +75,10 @@ const Page = () => {
             </div>
           </div>
         </div>
-      </div>
-            {/* NutriaSoft  */}
+
+        <footer className="p-5">
+          <i>NutriSoft</i>
+        </footer>
     </div>
   );
 };
