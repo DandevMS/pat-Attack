@@ -1,4 +1,3 @@
-import React from "react";
 import clouds from "../../../public/Cloud.png";
 import Image from "next/image";
 

@@ -13,13 +13,13 @@ export default function game() {
       frameBorder={0}
       title="Canvas Page"
     />
-    <div className="flex justify-start items-start m-5">
-      <button className="prev-button text-white border border-white p-1" onClick={() => {
+    <div className="flex justify-start items-start m-5 gap-5">
+      <button className="prev-button text-white border border-white p-1 " onClick={() => {
             route.push(`/`);
           }} >
             Regresar
       </button>
-
+          
       <button className="prev-button text-white border border-white p-1" onClick={() => {
             route.push(`/about/about`);
           }} >
