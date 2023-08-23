@@ -13,16 +13,17 @@ import { Card } from "@/components/about/Card";
 const Page = () => {
   const route = useRouter();
   return (
-    <div className="bg-black text-white overflow-scroll">
-        <main
+    <div className="bg-black text-white ">
+        <div
           className="absolute top-12 left-12 border border-white px-4 py-2 z-50"
-          // aun falta Hover
-          onClick={() => {
-            route.push(`/`);
-          }}
+         
         >
-          <p>regresar</p>
-        </main>
+          <button className="prev-button" onClick={() => {
+            route.push(`/`);
+          }}>
+            Regresar
+          </button>
+        </div>
         <div className="w-screen h-screen overflow-scroll ">
 
         <div className="flex flex-col container mx-auto px-4 my-auto justify-center ">
@@ -46,7 +47,7 @@ const Page = () => {
             <div className=" p-4">
               <Card
                 Img={DanUser}
-                Name="Dan"
+                Name="DanTech"
                 linkD="600492246256844800"
                 linkG="https://github.com/DandevMS"
                 linkL="https://www.linkedin.com/in/danilo-macea/"
