@@ -14,15 +14,15 @@ const Page = () => {
   const route = useRouter();
   return (
     <div className="bg-black text-white overflow-scroll">
-        <main
+        <button
           className="absolute top-12 left-12 border border-white px-4 py-2 z-50"
           // aun falta Hover
           onClick={() => {
             route.push(`/`);
           }}
         >
-          <p>regresar</p>
-        </main>
+          <a>regresar</a>
+        </button>
         <div className="w-screen h-screen overflow-scroll ">
 
         <div className="flex flex-col container mx-auto px-4 my-auto justify-center ">
