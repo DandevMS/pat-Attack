@@ -51,6 +51,7 @@ const Page = () => {
                 linkD="600492246256844800"
                 linkG="https://github.com/DandevMS"
                 linkL="https://www.linkedin.com/in/danilo-macea/"
+                
               />
             </div>
 
@@ -67,7 +68,7 @@ const Page = () => {
             <div className=" p-4">
               <Card
                 Img={WaterUser}
-                Name="Water"
+                Name="Watercubz"
                 linkD="775889013420195871"
                 linkG="https://github.com/watercubz/"
                 linkL="https://www.linkedin.com/in/watercubz/"
