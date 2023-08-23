@@ -1,3 +1,4 @@
+# Welcome to Pat-Attack: The Game Crafted with Love by and for You ❤️
 ## Getting Started
 
 First, run the development server:
