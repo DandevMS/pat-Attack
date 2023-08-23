@@ -1,9 +1,10 @@
-"use client"
+
 import Introduction from "@/components/intro/Introduction";
 import { useState } from "react";
+import { redirect } from "next/navigation";
 
 
-const page = () => {
+const page = ({params}) => {
     const [showIntroduction, setShowIntroduction] = useState(true);
 
   const handleIntroductionFinish = () => {
@@ -17,7 +18,7 @@ const page = () => {
         // <Introduction onFinish={handleIntroductionFinish} />
       ) : (
         //  seccion del juego, componente game
-        <p>Game</p>
+        redirect('/game')
       )}
     </div>
   );

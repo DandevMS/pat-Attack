@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../app/globals.css"
+import { useRouter } from "next/navigation";
 const slides = [
   {
     image: "https://i.ytimg.com/vi/UHU3pQM6xEM/maxresdefault.jpg",
@@ -22,6 +23,7 @@ const Introduction = ({ onFinish }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [introductionFinished, setIntroductionFinished] = useState(false);
   const [typedText, setTypedText] = useState("");
+  const route = useRouter();
 
   const nextSlide = () => {
     if (currentIndex < slides.length - 1) {
@@ -29,6 +31,7 @@ const Introduction = ({ onFinish }) => {
       setTypedText("");
     } else {
       setIntroductionFinished(true);
+      route.push(`/game/game`)
     }
   };
 
@@ -41,6 +44,7 @@ const Introduction = ({ onFinish }) => {
 
   const skipIntroduction = () => {
     setIntroductionFinished(true);
+    route.push(`/game/game`)
   };
 
   useEffect(() => {
