@@ -13,7 +13,7 @@ import { Card } from "@/components/about/Card";
 const Page = () => {
   const route = useRouter();
   return (
-    <div className="bg-black text-white ">
+    <div className="bg-black text-white  ">
         <div
           className="absolute top-12 left-12 border border-white px-4 py-2 z-50"
          
@@ -76,8 +76,8 @@ const Page = () => {
           </div>
         </div>
 
-        <footer className="p-5">
-          <i>NutriSoft</i>
+        <footer className="p-5 flex justify-center">
+          <i>NutriaSoft</i>
         </footer>
     </div>
   );
