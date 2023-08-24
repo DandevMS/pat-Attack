@@ -15,7 +15,7 @@ const slides = [
     text: "Quax se da cuenta de que debe enfrentar directamente este desafío y decide emprender un viaje para encontrar una cura y detener la propagación del virus. Viaja a través de la galaxia, enfrentando peligrosas criaturas infectadas y obstáculos mortales.",
   },
   {
-    text: "¡Último slide!",
+    text: "¡La batalla acaba de empezar!",
   },
 ];
 
