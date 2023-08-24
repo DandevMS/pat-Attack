@@ -19,7 +19,7 @@ const page = ({params}) => {
         // <Introduction onFinish={handleIntroductionFinish} />
       ) : (
         //  seccion del juego, componente game
-        router.push('/game')
+        router.push('/game/game')
       )}
     </div>
   );
