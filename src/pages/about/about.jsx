@@ -79,6 +79,9 @@ const Page = () => {
         <footer className="p-5 flex justify-center">
           <i>© copyright reserved to Nutriasoft</i>
         </footer>
+        <footer className=" p-2 flex justify-center">
+          <i>© this game was inspired by <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a></i>
+        </footer>
     </div>
   );
 };
