@@ -29,13 +29,13 @@ export class UI {
       //game over options
       if (this.game.lives === 0){
           this.title = 'Game Over';
-          this.text = 'Nope. Better luck next time!';
+          this.text = 'Mejor Suerte Par La Proxima!';
       } else if (this.game.score < 50 && this.game.lives > 0){
-          this.title = 'Are you scared?';
-          this.text = 'Be brave next time, they don\'t bite. Perhaps...';
+          this.title = 'Tienes Miedo?';
+          this.text = 'Se valiente, Podras con ellos la proxima vez';
       } else if (this.game.score > 50 && this.game.lives > 0){
-          this.title = 'Boo-ya';
-          this.text = 'What are creatures of the night afraid of? YOU!!!'
+          this.title = 'Victoria';
+          this.text = 'Esas Criaturas Nuncas Se La Vieron Venir'
       }
       // game over
       if (this.game.gameOver){
