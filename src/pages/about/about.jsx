@@ -77,7 +77,7 @@ const Page = () => {
         </div>
 
         <footer className="p-5 flex justify-center">
-          <i>NutriaSoft</i>
+          <i>© copyright with NutriaSoft</i>
         </footer>
     </div>
   );
