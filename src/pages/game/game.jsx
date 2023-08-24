@@ -16,7 +16,7 @@ export default function game() {
       <iframe
         src="/public_html/game.html"
         width="100%"
-        height="540"
+        height="530"
         frameBorder={0}
         title="Canvas Page"
       />
