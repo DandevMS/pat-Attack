@@ -23,7 +23,7 @@ export const Card = ({ Img, Name, linkD, linkG, linkL }) => {
 
       <div className="flex space-x-2">
         <span className="w-full h-full flex items-center justify-center">
-          <a href={`https://discordapp.com/users/${linkD}`}>
+          <a href={`https://discordapp.com/users/${linkD}`} target="_blank">
             <FontAwesomeIcon
               icon={faDiscord}
               size="3x"
@@ -41,7 +41,7 @@ export const Card = ({ Img, Name, linkD, linkG, linkL }) => {
           </a>
         </span>
         <span className="w-full h-full flex items-center justify-center">
-          <a href={linkL}>
+          <a href={linkL} target="_blank">
             <FontAwesomeIcon
               icon={faLinkedin}
               size="3x"
