@@ -1,5 +1,7 @@
+import Link from "next/link";
 import "../../app/globals.css";
 import { useRouter } from "next/navigation";
+
 export default function game() {
   const route = useRouter();
 
@@ -11,8 +13,18 @@ export default function game() {
           route.push(`/`);
         }}
       >
-        Regresar
+        Regresar  
       </button>
+       
+      <button
+        className="prev-button text-white border border-white p-1 m-5 "
+        onClick={() => {
+         route.push(`/game/game`)
+        }}
+      >
+        volver a jugar
+      </button>
+      
       <iframe
         src="/public_html/game.html"
         width="100%"
@@ -22,5 +34,6 @@ export default function game() {
       />
 
     </main>
+    
   );
 }
