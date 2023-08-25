@@ -31,7 +31,7 @@ const Introduction = ({ onFinish }) => {
       setTypedText("");
     } else {
       setIntroductionFinished(true);
-      route.push(`/game/game`)
+      route.push(`/controls/controls`)
     }
   };
 
