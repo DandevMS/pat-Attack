@@ -197,4 +197,7 @@ body {
   text-align: center;
 }
 
-/*   */
+/* ´page control  */
+.img-control {
+  filter: invert(100%);
+}

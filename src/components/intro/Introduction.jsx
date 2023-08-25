@@ -44,7 +44,7 @@ const Introduction = ({ onFinish }) => {
 
   const skipIntroduction = () => {
     setIntroductionFinished(true);
-    route.push(`/game/game`)
+    route.push(`/controls/controls`)
   };
 
   useEffect(() => {
