@@ -6,6 +6,11 @@ import { useRouter } from "next/navigation";
 export default function game() {
   const route = useRouter();
 
+  const handleReloadAndPlayAgain = () => {
+    window.location.reload();
+  };
+
+
   return (
     <main className=" bg-black h-screen w-screen">
       <button
@@ -18,9 +23,7 @@ export default function game() {
       </button>
       <button
         className="prev-button text-white border border-white p-1 m-5 "
-        onClick={() => {
-          route.push(`/game/game`);
-        }}
+        onClick={handleReloadAndPlayAgain}
       >
         Volver a jugar 
       </button>

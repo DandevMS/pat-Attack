@@ -16,7 +16,7 @@ function AboutComponent() {
           className="absolute top-12 left-12 border border-white px-4 py-2 z-50"
          
         >
-          <button className="prev-button" onClick={() => {
+          <button className="border text-white p-3" onClick={() => {
             route.push(`/`);
           }}>
             Regresar
