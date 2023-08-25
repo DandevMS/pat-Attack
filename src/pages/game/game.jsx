@@ -26,7 +26,9 @@ export default function game() {
         onClick={handleReloadAndPlayAgain}
       >
         Volver a jugar 
-      </button>
+      </button> <p className="text-white text-center inline">clickea en medio para enfocar y empezar el game</p>
+
+      
       <iframe
         src="/public_html/game.html"
         width="100%"
