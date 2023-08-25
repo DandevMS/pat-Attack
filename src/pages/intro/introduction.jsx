@@ -1,11 +1,12 @@
 
 import Introduction from "@/components/intro/Introduction";
 import { useState } from "react";
-import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 
 const page = ({params}) => {
     const [showIntroduction, setShowIntroduction] = useState(true);
+    const router = useRouter()
 
   const handleIntroductionFinish = () => {
     setShowIntroduction(false);
@@ -18,7 +19,7 @@ const page = ({params}) => {
         // <Introduction onFinish={handleIntroductionFinish} />
       ) : (
         //  seccion del juego, componente game
-        redirect('/game')
+        router.push('/game/game')
       )}
     </div>
   );

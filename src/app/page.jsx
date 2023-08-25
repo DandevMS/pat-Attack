@@ -14,7 +14,7 @@ export default function Home() {
           fontFamily: "var(--font-retro)",
         }}
       >
-        pat Attack
+      pat Attack
       </p>
       <div className=" btn flex flex-col">
         <button
