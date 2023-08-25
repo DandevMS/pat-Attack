@@ -13,7 +13,7 @@ function AboutComponent() {
   return (
     <div className="bg-black text-white  ">
         <div
-          className="absolute top-12 left-12 border border-white px-4 py-2 z-50"
+          className="absolute top-12 left-12  px-4 py-2 z-50"
          
         >
           <button className="border text-white p-3" onClick={() => {
@@ -77,8 +77,15 @@ function AboutComponent() {
         <footer className="p-5 flex justify-center">
           <i>© copyright reserved to Nutriasoft</i>
         </footer>
-        <footer className=" p-2 flex justify-center">
-          <i>© this game was inspired by <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a></i>
+        <footer className=" p-2 flex justify-center flex-col items-center">
+          <div>
+             <i>© this game was inspired by <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a></i>
+          </div>
+         
+          <div>
+             <i>view repository <a href="https://github.com/DandevMS/pat-Attack.git" className='hover:text-violet-500'>pat-Attack</a></i>
+          </div>
+         
         </footer>
     </div>
   )
